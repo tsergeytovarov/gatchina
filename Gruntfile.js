@@ -32,7 +32,7 @@ module.exports = function(grunt) {
     // автопрефиксер
     autoprefixer: {
       options: {
-        browsers: ['last 2 versions', 'ie 9'],
+        browsers: ['last 15 versions', 'ie 9'],
         map: true,
       },
       style: {
