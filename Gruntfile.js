@@ -43,9 +43,6 @@ module.exports = function(grunt) {
     // сжатие css
     cssmin: {
       style: {
-        options: {
-          keepSpecialComments: 0
-        },
         files: {
           'build/css/style.min.css': ['build/css/style.css']
         }
