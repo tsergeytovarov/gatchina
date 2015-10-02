@@ -53,7 +53,7 @@ module.exports = function(grunt) {
     uglify: {
       start: {
         files: {
-          'build/js/script.min.js': ['build/js/script.min.js']
+          'build/js/script.min.js': ['build/js/script.js']
         }
       }
     },
@@ -216,9 +216,8 @@ module.exports = function(grunt) {
 
   // только js
   grunt.registerTask('js', [
-    'uglify',
-    'copy:js_vendors',
     'copy:js',
+    'uglify'
   ]);
 
   // только стили
