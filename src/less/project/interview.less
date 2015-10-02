@@ -1,6 +1,6 @@
 .interview{
   width: 750px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 
   &__work{
     display: inline-block;
@@ -12,6 +12,16 @@
     background: #a6cf6d;
     letter-spacing: 7px;
     padding-left: 7px;
+    text-transform: uppercase;
+  }
+
+  &__do{
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    color: #1a0e0b;
+    display: block;
+    margin-bottom: 5px;
   }
 
   &__name{
@@ -21,6 +31,7 @@
     letter-spacing: 9px;
     font-weight: 400;
     margin-top: 15px;
+    text-transform: uppercase;
     margin-bottom: 10px;
   }
 
@@ -50,6 +61,10 @@
     line-height: 28px;
     text-align: left;
     background: url("../img/quote.svg") no-repeat 10px 20px;
+
+    &--with-do{
+      background: url("../img/quote.svg") no-repeat 10px 85px;
+    }
   }
 
   &__link{
