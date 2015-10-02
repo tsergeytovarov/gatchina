@@ -34,10 +34,29 @@
     &--share{
       background: #000;
       height: 74px;
+      position: relative;
+      cursor: pointer;
 
-      img{
+      &:hover{
+        opacity: .9;
+      }
+
+      svg{
         display: block;
         margin: 25px auto 0;
+        fill: #fff;
+      }
+    }
+
+    &--share-open{
+      background: #fff;
+
+      svg{
+        fill: #000;
+      }
+
+      .social-share{
+        display: block;
       }
     }
   }
@@ -73,6 +92,42 @@
       line-height: 12px;
       border-bottom: 1px solid #000;
       transform: translateY(-0px);
+    }
+  }
+}
+
+.social-share{
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  font-size: 0;
+  display: none;
+
+  &__link{
+    display: inline-block;
+    vertical-align: top;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #000;
+    margin-right: 10px;
+    text-align: center;
+
+    &:last-child{
+      margin-right: 0;
+    }
+
+    svg{
+      margin-top: 5px;
+      fill: #fff;
+    }
+
+    &:hover{
+      background: #fff;
+
+      svg{
+        fill: #000;
+      }
     }
   }
 }
