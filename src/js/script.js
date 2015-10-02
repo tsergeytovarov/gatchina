@@ -18,6 +18,8 @@ $(function() {
     $('html, body').animate({
         scrollTop: $("." + section).offset().top
     }, 1000);
+    $(".navigation__link").removeClass("navigation__link--active");
+    $(this).addClass("navigation__link--active");
   });
 
 });
