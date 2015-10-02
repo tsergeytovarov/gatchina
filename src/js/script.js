@@ -8,4 +8,8 @@ $(function() {
     }
   });
 
+  $(".js-change-image").on("click", function(){
+    $(this).parents(".time-screen").css("background-image", "url(img/" + $(this).attr("data-image") + ")");
+  });
+
 });
