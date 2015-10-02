@@ -1,0 +1,77 @@
+.interview{
+  width: 750px;
+  margin: 0 auto;
+
+  &__work{
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    color: #000;
+    background: #a6cf6d;
+    letter-spacing: 7px;
+    padding-left: 7px;
+  }
+
+  &__name{
+    margin: 0;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 9px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  &__image{
+    float: left;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+
+    img{
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__text{
+    margin: 0;
+    padding: 20px 0 0 50px;
+    float: left;
+    width: 500px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    background: url("../img/quote.svg") no-repeat 10px 20px;
+  }
+
+  &__link{
+    font-size: 12px;
+    line-height: 20px;
+    color: #b2b2b2;
+    text-decoration: none;
+    letter-spacing: 6px;
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-weight: 500;
+    display: block;
+    text-transform: uppercase;
+    margin-top: 5px;
+
+    &:hover{
+      span{
+        border-bottom: 0;
+      }
+    }
+
+    span{
+      border-bottom: 1px solid #b2b2b2;
+    }
+  }
+}
