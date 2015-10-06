@@ -29,7 +29,6 @@ $(function() {
     var father = $(this).parents(".photo-carousel");
     father.find(".photo-carousel__active").removeClass("photo-carousel__active").addClass("photo-carousel__preview").addClass(this_photo).attr("data-image", this_number);
     $(this).removeClass("photo-carousel__preview").removeClass(this_photo).addClass("photo-carousel__active").attr("data-image", "0");
-
   });
 
 });
