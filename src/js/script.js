@@ -31,4 +31,6 @@ $(function() {
     $(this).removeClass("photo-carousel__preview").removeClass(this_photo).addClass("photo-carousel__active").attr("data-image", "0");
   });
 
+  $('.scrollbar-inner').scrollbar();
+
 });
