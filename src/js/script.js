@@ -20,6 +20,7 @@ $(function() {
     }, 1000);
     $(".navigation__link").removeClass("navigation__link--active");
     $(this).addClass("navigation__link--active");
+    return false;
   });
 
   //обработка картинок
