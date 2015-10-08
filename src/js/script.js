@@ -34,4 +34,19 @@ $(function() {
 
   $('.scrollbar-inner').scrollbar();
 
+  $(document).scroll(function(){
+    var curr_pos = $('.navigation').offset().top - $(window).height() + $('.navigation').height();
+    $(".time").length;
+    for ( var i = 0; i < $(".time").length; i++){
+      var sel = ".time:eq(" + i + ")";
+      var curr_time = $(sel).offset().top;
+      if (curr_time > curr_pos){
+        $(".navigation__link").removeClass("navigation__link--active");
+        var sele = ".js-for-" + i;
+        $(sele).addClass("navigation__link--active");
+        return false;
+      }
+    }
+  });
+
 });
