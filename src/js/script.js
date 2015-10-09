@@ -32,9 +32,9 @@ $(function() {
     $(this).removeClass("photo-carousel__preview").removeClass(this_photo).addClass("photo-carousel__active").attr("data-image", "0");
   });
 
-  $('.scrollbar-inner').scrollbar();
+  $("img.lazy").lazyload();
 
-  $(document).scroll(function(){
+  $(window).scroll(function(){
     var curr_pos = $('.navigation').offset().top - $(window).height() + $('.navigation').height();
     $(".time").length;
     for ( var i = 0; i < $(".time").length; i++){
